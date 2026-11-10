@@ -459,6 +459,215 @@ html[data-lang="cn"]{--f-ui:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-
 .dadchip{padding:2px 10px 2px 3px;gap:5px}
 .dadchip svg{flex:none;display:block}
 .hello{font-family:var(--f-hand);font-weight:700;font-size:22px;color:#8a4a1f;margin:14px 0 2px;text-align:center}
+/* v0.6 老公靈籤 share page: only this page is red and gold */
+.btn.sgbtn{background:#A32D2D;color:#FAEEDA;font-size:19px;min-height:62px;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn.sgbtn svg{color:#FAC775;flex:none}
+#ov.signv{background:#A32D2D;color:#FAEEDA}
+#ov.signv .bar b{color:#FAC775;font-size:22px}
+#ov.signv .pill{background:#791F1F;color:#FAEEDA;border-color:#FAC775}
+#ov.signv .body,#ov.signv .sgb{color:#FAEEDA;font-size:19px;line-height:1.6}
+#ov.signv .lb,#ov.signv .sec{color:#FAC775;font-size:18px}
+#ov.signv .sec small{font-size:15px;color:#FAEEDA;font-weight:500}
+#ov.signv input{background:#791F1F;color:#FAEEDA;border:2px solid #FAC775;font-size:19px;min-height:52px}
+#ov.signv input::placeholder{color:#e7b9a0}
+#ov.signv .fine{color:#f3cdb8;font-size:15px}
+#ov.signv .btn.sgbtn{background:#FAC775;color:#791F1F;font-size:20px}
+#ov.signv .btn.soft{background:#791F1F;color:#FAEEDA;border:2px solid #FAC775;font-size:18px}
+.sggrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:8px 0 14px}
+.sgopt{background:#791F1F;color:#FAC775;border:2px solid transparent;border-radius:16px;padding:10px 6px 10px;display:flex;flex-direction:column;align-items:center;gap:4px;font:inherit;cursor:pointer}
+.sgopt span{color:#FAEEDA;font-size:17px;font-weight:700;line-height:1.3;text-align:center}
+.sgopt.sel{border-color:#FAC775;background:#5e1717;box-shadow:0 0 0 2px #FAC775 inset}
+.sgopt.sel span::before{content:'✓ ';color:#FAC775}
+.sgimg{border-radius:14px;border:3px solid #FAC775;margin:6px 0 12px}
+/* v0.6 the voices in Hubby mode */
+.puab{background:#fff3e6;border:2px solid #c4683c;border-radius:20px 20px 20px 6px;padding:14px 16px;font-size:21px;line-height:1.5;font-weight:700;color:#3d332b;margin:10px 0 12px}
+.puab small{display:block;font-size:15px;color:#a0522d;font-weight:700;margin-bottom:2px}
+.puabar{display:block;height:8px;border-radius:4px;background:#ece3d4;overflow:hidden;margin-bottom:10px}
+.puabar s{display:block;height:100%;width:100%;background:#e8836b;animation:puabar linear forwards}
+@keyframes puabar{from{width:100%}to{width:0}}
+.sgimg{width:100%;max-width:100%;display:block}
+/* v0.6 Hubby mode fallout after the battery runs out */
+.blackout.fall{justify-content:flex-start;padding-top:8px;overflow-y:auto}
+.fallrow{display:flex;gap:12px;align-items:flex-start;background:#3a3036;border-radius:18px;padding:12px 14px;margin:10px 0;text-align:left;opacity:0;animation:fallin .6s ease forwards}
+.fallrow .fface{flex:none;width:58px;height:58px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#4b4054;overflow:hidden}
+.fallrow .fic{color:#f2b84b;display:flex}
+.fallrow .time{color:#e8a98f;font-size:14px;font-weight:700}
+.fallrow .fwhat{color:#fff6ec;font-size:18px;line-height:1.5;font-weight:700;margin:2px 0}
+.fallrow .finner{color:#d9cbbd;font-size:16px;line-height:1.55;margin:0}
+.fallend{opacity:0;animation:fallin .8s ease forwards;margin:16px 0 8px;text-align:left}
+.fallend p{color:#fff6ec;font-size:19px;line-height:1.6;font-weight:700;margin:0 0 10px}
+.fallend .fask{color:#f2b84b;font-family:var(--f-hand);font-size:21px}
+.blackout.fall #nx{opacity:0;animation:fallin .6s ease forwards}
+@keyframes fallin{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+#ov.signv .btn.sgnext{background:transparent;color:#FAC775;border:2px dashed #FAC775;font-size:18px;margin-top:14px}
+/* v0.6 font scale */
+.daychip{font-size:13px}
+.pillbtn{font-size:15.5px}
+.cloud{font-size:16px}
+.seglbl{font-size:12px}
+.mood{font-size:17px}
+.why{font-size:11.5px}
+.spark{font-size:17px}
+.alert{font-size:14px}
+.bgw .lbl{font-size:13px}
+.bgw .rate{font-size:13px}
+.worry{font-size:13.5px}
+.worry b{font-size:12px}
+.bgw .none{font-size:13.5px}
+.time{font-size:14.5px}
+h3{font-size:18.5px}
+.body{font-size:17px}
+.os{font-size:17.5px}
+.tag{font-size:13px}
+.opt b{font-size:21px}
+.opt .c{font-size:17px}
+.opt span.d{font-size:17.5px}
+.opt .wn{font-size:15.5px}
+.row b{font-size:18.5px}
+.row span.d{font-size:15px}
+.row .r{font-size:15px}
+.new{font-size:12px}
+.btn{font-size:18.5px}
+.linkbtn{font-size:16.5px}
+.reframe{font-size:19.5px}
+.strike{font-size:15.5px}
+.stat b{font-size:20px}
+.stat span{font-size:13px}
+.choices button{font-size:17px}
+.chipsel button{font-size:16.5px}
+textarea,input[type=text]{font-size:18px}
+.fine{font-size:14.5px}
+.bar b{font-size:19.5px}
+.pill{font-size:15.5px}
+.tip{font-size:15.5px}
+.goal{font-size:15.5px}
+.goal .gb{font-size:15.5px}
+.tcard b{font-size:18px}
+.tcard span.d{font-size:15px}
+.bub{font-size:16.5px}
+.bub small{font-size:13.5px}
+.qcard small{font-size:14.5px}
+.qcard p{font-size:19.5px}
+.wishlist{font-size:16.5px}
+label.lb{font-size:17px}
+.say{font-size:17px}
+.say small{font-size:13.5px}
+.intr .q{font-size:18px}
+.sipbig{font-size:18.5px}
+.flash{font-size:15.5px}
+.breathcore .bs{font-size:14.5px}
+.seg2 button{font-size:17px}
+.subbox p{font-size:20.5px}
+.polaroid .cap{font-size:17px}
+.knows p{font-size:19.5px}
+.knows p.now{font-size:20.5px}
+.letter p{font-size:19.5px}
+.hugbtn span{font-size:18.5px}
+.album .say2{font-size:17px}
+.check{font-size:16.5px}
+.sugg button{font-size:15.5px}
+.en{font-size:14.5px}
+.tagline{font-size:20px}
+.age b{font-size:18px}
+.age span{font-size:14px}
+.rule b{font-size:17px}
+.rule span{font-size:16.5px}
+.num{font-size:16.5px}
+.uabar{font-size:14px}
+.hl b{font-size:17px}
+.hl span.d{font-size:14.5px}
+.hl .n{font-size:18px}
+.alertbox{font-size:15px}
+.sec{font-size:17px}
+.ground{font-size:17px}
+#toast{font-size:16.5px}
+.badge{font-size:14px}
+.quote{font-size:18px}
+.tool{font-size:17px}
+.tool.sos i{font-size:13px}
+.langs button{font-size:16px}
+.agegrid.three .age b{font-size:16px}
+.agegrid.three .age span{font-size:13px}
+.tabs button{font-size:16.5px}
+.sugg.big button{font-size:16.5px}
+.cloud.big{font-size:18px}
+.react{font-size:17px}
+.loseline.soft{font-size:19.5px}
+.sheetnote{font-size:14.5px}
+.cosarc{font-size:16.5px}
+.coslab{font-size:15px}
+.coshand{font-size:19.5px}
+.cosgrid ul{font-size:17px}
+.wxt{font-size:17px}
+.hmtips{font-size:18px}
+.coslin{font-size:17px}
+#sheet .body{font-size:19px}
+#sheet .row b{font-size:19px}
+#sheet .row small,#sheet .row span{font-size:17px}
+#sheet .time{font-size:17px}
+.bykaty{font-size:17px}
+.ccard b{font-size:18.5px}
+.ccard .crow span{font-size:17px}
+.mbox .ccard .crow span{font-size:16px}
+.katyw p.body{font-size:18.5px}
+.thc h3 small{font-size:15.5px}
+.throw b{font-size:18.5px}
+.throw span{font-size:17px}
+.thlab{font-size:17.5px}
+.thend{font-size:19.5px}
+.thbl{font-size:17px}
+.thmore summary{font-size:18px}
+.btn.sgbtn{font-size:20.5px}
+#ov.signv .body,#ov.signv .sgb{font-size:20.5px}
+#ov.signv .lb,#ov.signv .sec{font-size:19.5px}
+#ov.signv .sec small{font-size:17px}
+#ov.signv input{font-size:20.5px}
+#ov.signv .fine{font-size:17px}
+#ov.signv .btn.soft{font-size:19.5px}
+.sgopt span{font-size:18.5px}
+.puab small{font-size:17px}
+.fallrow .time{font-size:16.5px}
+.fallrow .fwhat{font-size:19.5px}
+.fallrow .finner{font-size:18px}
+.fallend p{font-size:20.5px}
+#ov.signv .btn.sgnext{font-size:19.5px}
+/* v0.6 yes/no chips looked like plain text: give them a real button shape */
+.chipsel{gap:10px}
+.chipsel button{background:#fff;border:2px solid var(--line);min-height:50px;min-width:88px;padding:10px 22px;font-size:17.5px}
+.chipsel button.sel{background:var(--ink);border-color:var(--ink);color:#fff}
+/* v0.6 the "push back the voices" game: bigger bubbles */
+.bub{font-size:18px;line-height:1.4}
+.bub small{font-size:14px}
+/* v0.6 font check: lift the last small labels on the main screen and in a few panels */
+.why{font-size:13.5px;line-height:1.3}
+.seglbl{font-size:13.5px}
+.daychip{font-size:14px}
+.bgw .lbl{font-size:14px}
+.bgw .none{font-size:14.5px}
+.tag{font-size:14.5px}
+.prog3 .bc{font-size:15px}
+.hl span.d{font-size:15.5px}
+.fine{font-size:15px}
+#help .fine{font-size:15.5px}
+.mono.time,.time .mono{font-size:16px}
+.breathcore .bs{font-size:15.5px}
+.bgw .worry{font-size:14.5px}
+.bgw .rate{font-size:14px}
+.alert{font-size:15px}
+/* v0.6 font check: give Baby's side of the status card more room now the text is bigger */
+.status{grid-template-columns:minmax(0,1fr) 34px 138px}
+@media (max-width:370px){.status{grid-template-columns:minmax(0,1fr) 26px 128px}.wire{transform:scale(.8)}}
+/* English tool labels are long: icon above the word so nothing wraps */
+html[lang=en] .tool{flex-direction:column;gap:1px;font-size:15.5px;line-height:1.15;white-space:nowrap;padding:5px 4px}
+html[lang=en] .tool svg{width:20px;height:20px}
+@media (max-width:370px){.tool{flex-direction:column;gap:1px;line-height:1.15;white-space:nowrap;padding:5px 4px}.tool svg{width:20px;height:20px}}
+/* v0.6 font check: setup cards (age, work) */
+.age b{font-size:19px}
+.age span{font-size:15px;line-height:1.45}
+.agegrid.three .age b{font-size:17px}
+.agegrid.three .age span{font-size:14.5px;line-height:1.4}
+.agegrid.three .age span{font-size:15px}
+@media (max-width:370px){.agegrid.three .age b{font-size:19px}.agegrid.three .age span{font-size:16px}}
 
 </style>
 </head>
@@ -467,7 +676,7 @@ html[data-lang="cn"]{--f-ui:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-
 <script>
 (function(){'use strict';
 /* ================= DEFINITIONS (language-independent) ================= */
-var VERSION='v0.5';
+var VERSION = 'v0.6';
 var GAME_URL='https://misskatyw.github.io/mamaslastbattery/';
 var SLOWBOOT='https://misskatyw.github.io/slowboot/';
 var QR_COLOR='#7a1f3d';
@@ -960,8 +1169,8 @@ L.yue.help.n.tw1925=['安心專線 1925','24 小時 · 免付費'];L.yue.help.n.
 L.yue.ui.helpRegion='揀你電話嘅國際區號';
 Object.assign(L.yue.ui,{
  hmBtn:'👨 老公體驗模式：做一日媽媽',hmT:'老公體驗模式',
- hmIntro:'老公，今日由你做媽媽。湊仔、家務、返工、擔心，全部計你。玩一日，感受吓佢每日點樣用電。',
- qName_hm:'老婆個名（可以唔填）',hmDayNote:'老公體驗模式：今日你係媽媽。',sumEnd_hm:'睇體驗結果',shareDad_hm:'send 俾老婆',
+ hmIntro:'老公，今日由你做媽媽。湊仔、家務、返工、擔心，全部計你。玩一日，感受吓佢每日點樣用電。每次做決定，都會有把聲出嚟話你，同佢每日聽到嘅一樣。',
+ qName_hm:'老婆個名（可以唔填）',hmDayNote:'老公體驗模式：今日你係媽媽。把聲出嚟嘅時候，快啲撳「我已經盡咗力」。',sumEnd_hm:'睇體驗結果',shareDad_hm:'send 俾老婆',
  waText_hm:'老婆，我玩咗《留一格電》做咗一日媽媽，原來你每日咁辛苦。今晚碗我洗，你休息吓 🫶',
  loseB1_hm:'你攰到頂唔順，大聲咗。',loseB2_hm:'呢個就係老婆好多日嘅感覺。佢唔係脾氣差，係冇咗電。',loseB3_hm:'小朋友永遠都愛佢。佢最需要嘅唔係建議，係有人幫佢叉電。',
  loseTip_hm:'今晚試吓：唔使問，直接接手一樣嘢，等老婆坐低。',
@@ -1007,7 +1216,7 @@ Object.assign(L.yue.ui,{
  invFriTx:'我玩緊《留一格電》，做一個媽媽撐過星期三到星期日，記住留一格電俾自己。免費、唔使登入，你都試吓：',
  invDadTx:'老公，呢個遊戲有個「老公體驗模式」，你試吓做一日媽媽，我想你知道我每日點過 🫶 ',
  invCopied:'已經複製好，貼俾佢就得',
- hmInvited:'有人邀請你玩「老公體驗模式」',hmInvitedB:'今日由你做媽媽。玩一日，感受吓佢每日點樣用電。',hmInvGo:'開始做一日媽媽',
+ hmInvited:'有人邀請你玩「老公體驗模式」',hmInvitedB:'今日由你做媽媽。玩一日，感受吓佢每日點樣用電。每次做決定，都會有把聲出嚟話你，同佢每日聽到嘅一樣。',hmInvGo:'開始做一日媽媽',
  crName:'Katy・@misskw3_3',crLine:'香港媽媽，抑鬱康復中。呢個遊戲送俾每一位 supermom。',crIG:'Instagram',crSite:'個人網站',crAbout:'Katy 嘅話・關於遊戲',
  katyT:'Katy 嘅話',katySign:'Katy・@misskw3_3',menuAbout:'Katy 嘅話・關於遊戲',
  aboutRef:'遊戲入面嘅方法參考咗自我慈悲、認知行為治療、「斷裂與修補」（rupture and repair）嘅親子研究、安全圈，同埋靜觀。靜觀錄音由 Katy 親自錄製。此遊戲不能代替專業治療。',
@@ -1044,6 +1253,56 @@ Object.assign(L.yue.ui,{
  hmSend_hmn:'send 俾{w}：「今晚我嚟」',
  waText_hmn:'{w}，我玩咗《留一格電》做咗一日媽媽，原來你每日咁辛苦。今晚碗我洗，你休息吓 🫶'
 });
+
+/* ---- v0.6 老公靈籤 share page ---- */
+Object.assign(L.yue.ui,{
+ signBtn:'求一支老公靈籤，share 去 story',signT:'老公靈籤',
+ signBW:'挑戰成功！揀兩樣承諾，出一張上上籤，share 去 story 俾老婆睇。',
+ signBL:'冇電喇。請老婆揀兩樣懲罰，出一張下下籤，share 去 story 認錯。',
+ signName:'老公個名（可以唔填）',signNameDef:'老公',signPick:'揀最多兩樣',
+ signNoW:'第八籤',signNoL:'第十八籤',signLotW:'上上籤',signLotL:'下下籤',
+ signTitleW:'好老公認證',signTitleL:'老公知錯書',signCert:'茲證明 {n}',
+ signW1:'做足一日媽媽',signW2:'瞓前仲有 {p}% 電',signL1:'做一日媽媽',signL2:'撐到 {tm} 冇電',signL2b:'瞓前得返 {p}% 電',
+ signStampW:'挑戰|成功',signStampL:'挑戰|失敗',
+ signVerseW:'一格電量　留到天光|老婆展顏　家宅安康',signVerseL:'電量歸零　老婆發功|速速洗碗　方保平安',
+ signPickW:'老公承諾：',signPickL:'老婆裁定懲罰：',
+ signOptW:'baby:今晚我湊|egg:聽日早餐我整|sleep:老婆早啲瞓|flower:送花俾老婆|dish:今晚碗我洗|game:老婆獎我打機',
+ signOptL:'kb:跪 keyboard|dish:洗碗一星期|flower:送花俾老婆|baby:湊一日小朋友|sorry:老婆我知錯了',
+ signCtaW:'我老公做到|你老公呢？|@tag 3 個媽媽',signCtaL:'你老公撐到幾點？|掃碼俾佢求一籤|@tag 你老婆',
+ signSave:'儲存圖片',signShare:'Share 去 Story',
+ signTxtW:'我老公玩《留一格電》做一日媽媽，求到上上籤！你老公呢？',signTxtL:'我玩《留一格電》做一日媽媽，求到下下籤……老婆我知錯了。你老公撐到幾點？'
+});
+
+Object.assign(L.yue.ui,{sgSorry:'知錯',
+ puaT:'把聲又嚟喇',puaNo:'我已經盡咗力',puaYes:'佢講得啱……',puaHint:'快啲撳「我已經盡咗力」（−{a}%）。唔撳嘅話，佢會聽咗入心（−{b}%）。',
+ puaOkT:'頂返佢 −{n}%。',puaSunkT:'聽咗入心 −{n}%。媽媽日日都聽住呢啲說話。',
+ puaV:{
+  do:[['自己','做埋呢樣先可以抖，唔係就係懶。','唔使樣樣做晒先值得休息。'],['婆婆','我以前湊三個都冇你咁多嘢講。','每個年代都有佢嘅辛苦。'],['老闆','你最近成日早走喎。','照顧屋企唔係偷懶。'],['網上','人哋媽媽仲有時間做 gym、煮四餸。','網上只見到人哋最好嗰一面。'],['自己','做得咁慢，你真係好冇用。','慢都係做緊，已經好叻。']],
+  let:[['婆婆','咁都唔理？小朋友會學壞㗎。','放手一次，唔會教壞個仔。'],['親戚','你又唔使返工，點解搞成咁？','全職湊仔都係一份工。'],['自己','我係咪好懶？係咪唔夠愛佢？','留電俾最重要嘅事，唔係懶。'],['鄰居','你個仔咁嘈都唔管下？','小朋友嘈係正常。'],['學校群組','其他家長都準備好晒喇。','唔使同其他人比。']],
+  help:[['自己','搵人幫，即係我唔掂。','識搵幫手係本事。'],['老公','你成日喺屋企，有幾辛苦啫？','你而家就知幾辛苦。'],['婆婆','請人湊？咁點同你親？','愛唔係靠樣樣親手做。'],['自己','又麻煩人，人哋會覺得我好煩。','求助唔係麻煩人。']],
+  delay:[['網上','拖拖拉拉，難怪屋企咁亂。','屋企亂唔等於你失敗。'],['老師','又遲交？家長要跟多啲喇。','遲一日唔會影響一世。'],['自己','我咩都做唔好。','今日做唔晒都得。'],['婆婆','聽日？你成日都話聽日。','排先後次序係智慧。']]}
+});
+
+Object.assign(L.yue.ui,{signNext:'睇今日體驗結果',signRes:'結果',signBack:'返去老公靈籤，share 去 story',
+ hmFallT:'斷電之後，屋企發生咗咩事？',
+ hmFall:[['kid','19:10・小朋友','你大聲鬧咗佢：「講咗幾多次！快啲啦！」','佢縮埋一角，細細聲問：「媽媽，係咪我唔乖？」'],
+  ['dad','19:40・老公','老公問：「今晚食咩？」你爆咗：「你自己唔識睇咩！」','佢覺得你無理取鬧，你覺得冇人明白你。兩個人成晚冇講嘢。'],
+  ['mess','20:30・屋企','飯燶咗，通告冇簽，功課冇睇，衫仲未晾。','你覺得自己乜都做唔好。'],
+  ['night','23:50・自己','小朋友瞓咗，你一個人喺廁所喊咗十分鐘。','然後抹乾眼淚，執埋聽日個書包。']],
+ hmFallEnd:'呢啲唔係脾氣差，係冇電嘅後果。佢每次大聲之前，其實已經撐咗好耐。',
+ hmFallEnd_hmn:'呢啲唔係{w}脾氣差，係冇電嘅後果。{w}每次大聲之前，其實已經撐咗好耐。',
+ hmFallAsk:'下次佢大聲，唔好問「你做咩咁大脾氣？」試吓講：「你冇電喇，我嚟。」',
+ hmFallAsk_hmn:'下次{w}大聲，唔好問「你做咩咁大脾氣？」試吓講：「你冇電喇，我嚟。」',
+ hmFallGo:'我明白喇',
+ invFri:'邀請朋友玩，順便教育埋佢老公',
+ invFriTx:'我玩緊《留一格電》，做一個媽媽撐過星期三到星期日，記住留一格電俾自己。仲有「老公體驗模式」，可以幫你教育埋個老公 😏 免費、唔使登入，你都試吓：',
+ shareB:'揀一張，儲存或者分享去 IG、WhatsApp 畀老公，幫你教育埋佢。每張都有 QR code，朋友掃就玩到。',
+ cardScan:'掃我留一格電，順便教育埋老公',
+ signTxtW:'我老公玩《留一格電》做一日媽媽，求到上上籤！你都叫老公玩，幫你教育埋佢 👉',
+ signTxtL:'我玩《留一格電》做一日媽媽，求到下下籤……老婆我知錯了。你都叫老公玩，幫你教育埋佢 👉'
+});
+Object.assign(L.yue.ui,{invFri_nd:'邀請朋友玩',invFriTx_nd:'我玩緊《留一格電》，做一個媽媽撐過星期三到星期日，記住留一格電俾自己。免費、唔使登入，你都試吓：',cardScan_nd:'掃我，留一格電畀自己'});
+Object.assign(L.yue.ui,{sumEnd_hm:'求一支老公靈籤'});
 
 /* ================= 繁體中文（台灣） ================= */
 L.tw={
@@ -1383,8 +1642,8 @@ L.tw.help.n.tw1925=['安心專線 1925','24 小時 · 免付費'];L.tw.help.n.tw
 L.tw.ui.helpRegion='選你電話的國際區號';
 Object.assign(L.tw.ui,{
  hmBtn:'👨 老公體驗模式：當一天媽媽',hmT:'老公體驗模式',
- hmIntro:'老公，今天由你當媽媽。顧小孩、家事、上班、擔心，全部算你的。玩一天，感受一下她每天怎麼用電。',
- qName_hm:'老婆的名字（可以不填）',hmDayNote:'老公體驗模式：今天你是媽媽。',sumEnd_hm:'看體驗結果',shareDad_hm:'傳給老婆',
+ hmIntro:'老公，今天由你當媽媽。顧小孩、家事、上班、擔心，全部算你的。玩一天，感受一下她每天怎麼用電。每次做決定，都會有個聲音跳出來批評你，就像她每天聽到的一樣。',
+ qName_hm:'老婆的名字（可以不填）',hmDayNote:'老公體驗模式：今天你是媽媽。聲音跳出來時，快按「我已經盡力了」。',sumEnd_hm:'看體驗結果',shareDad_hm:'傳給老婆',
  waText_hm:'老婆，我玩了《留一格電》當了一天媽媽，原來你每天這麼辛苦。今晚碗我洗，你休息一下 🫶',
  loseB1_hm:'你累到撐不住，大聲了。',loseB2_hm:'這就是老婆很多天的感覺。她不是脾氣差，是沒電了。',loseB3_hm:'孩子永遠都愛她。她最需要的不是建議，是有人幫她充電。',
  loseTip_hm:'今晚試試看：不用問，直接接手一件事，讓老婆坐下來。',
@@ -1430,7 +1689,7 @@ Object.assign(L.tw.ui,{
  invFriTx:'我在玩《留一格電》，當一個媽媽撐過星期三到星期日，記得留一格電給自己。免費、不用登入，你也試試看：',
  invDadTx:'老公，這個遊戲有「老公體驗模式」，你試試看當一天媽媽，我想讓你知道我每天是怎麼過的 🫶 ',
  invCopied:'已經複製好了，貼給對方就好',
- hmInvited:'有人邀請你玩「老公體驗模式」',hmInvitedB:'今天由你當媽媽。玩一天，感受一下她每天怎麼用電。',hmInvGo:'開始當一天媽媽',
+ hmInvited:'有人邀請你玩「老公體驗模式」',hmInvitedB:'今天由你當媽媽。玩一天，感受一下她每天怎麼用電。每次做決定，都會有個聲音跳出來批評你，就像她每天聽到的一樣。',hmInvGo:'開始當一天媽媽',
  crName:'Katy・@misskw3_3',crLine:'香港媽媽，正在走出憂鬱。這個遊戲送給每一位 supermom。',crIG:'Instagram',crSite:'個人網站',crAbout:'Katy 的話・關於遊戲',
  katyT:'Katy 的話',katySign:'Katy・@misskw3_3',menuAbout:'Katy 的話・關於遊戲',
  aboutRef:'遊戲裡的方法參考了自我疼惜、認知行為治療、「斷裂與修補」（rupture and repair）的親子研究、安全圈，以及正念。粵語正念錄音由 Katy 親自錄製。本遊戲不能取代專業治療。',
@@ -1467,6 +1726,56 @@ Object.assign(L.tw.ui,{
  hmSend_hmn:'傳給{w}：「今晚我來」',
  waText_hmn:'{w}，我玩了《留一格電》當了一天媽媽，原來你每天這麼辛苦。今晚碗我洗，你休息一下 🫶'
 });
+
+/* ---- v0.6 老公靈籤 share page ---- */
+Object.assign(L.tw.ui,{
+ signBtn:'抽一支老公靈籤，分享到限時動態',signT:'老公靈籤',
+ signBW:'挑戰成功！選兩項承諾，產生一支上上籤，分享到限時動態給老婆看。',
+ signBL:'沒電了。請老婆選兩項懲罰，產生一支下下籤，分享到限時動態認錯。',
+ signName:'老公的名字（可不填）',signNameDef:'老公',signPick:'最多選兩項',
+ signNoW:'第八籤',signNoL:'第十八籤',signLotW:'上上籤',signLotL:'下下籤',
+ signTitleW:'好老公認證',signTitleL:'老公認錯書',signCert:'茲證明 {n}',
+ signW1:'當了一整天媽媽',signW2:'睡前還有 {p}% 電',signL1:'當一天媽媽',signL2:'撐到 {tm} 沒電',signL2b:'睡前只剩 {p}% 電',
+ signStampW:'挑戰|成功',signStampL:'挑戰|失敗',
+ signVerseW:'一格電量　守到天明|老婆展顏　家宅安康',signVerseL:'電量歸零　老婆發威|速速洗碗　方保平安',
+ signPickW:'老公承諾：',signPickL:'老婆裁定懲罰：',
+ signOptW:'baby:今晚我顧小孩|egg:明天早餐我做|sleep:老婆早點睡|flower:送花給老婆|dish:今晚碗我洗|game:老婆賞我打電動',
+ signOptL:'kb:跪鍵盤|dish:洗碗一星期|flower:送花給老婆|baby:顧小孩一整天|sorry:老婆我錯了',
+ signCtaW:'我老公做到了|你老公呢？|@tag 3 位媽媽',signCtaL:'你老公撐到幾點？|掃碼讓他抽一支|@tag 你老婆',
+ signSave:'儲存圖片',signShare:'分享到限時動態',
+ signTxtW:'我老公玩《留一格電》當了一天媽媽，抽到上上籤！你老公呢？',signTxtL:'我玩《留一格電》當了一天媽媽，抽到下下籤……老婆我錯了。你老公撐得到幾點？'
+});
+
+Object.assign(L.tw.ui,{sgSorry:'知錯',
+ puaT:'那個聲音又來了',puaNo:'我已經盡力了',puaYes:'他說得對……',puaHint:'快按「我已經盡力了」（−{a}%）。不按的話，它會被你聽進心裡（−{b}%）。',
+ puaOkT:'頂回去了 −{n}%。',puaSunkT:'聽進心裡了 −{n}%。媽媽每天都聽著這些話。',
+ puaV:{
+  do:[['自己','做完這件才可以休息，不然就是懶。','不用全部做完才值得休息。'],['婆婆','我以前帶三個都沒你這麼多話。','每個年代都有它的辛苦。'],['老闆','你最近常常早退喔。','照顧家庭不是偷懶。'],['網路','別人的媽媽還有時間上健身房、煮四菜一湯。','網路上只看到別人最好的一面。'],['自己','做得這麼慢，你真沒用。','慢慢做也是在做，已經很棒。']],
+  let:[['婆婆','這樣都不管？孩子會學壞的。','放手一次，不會教壞孩子。'],['親戚','你又不用上班，怎麼搞成這樣？','全職帶孩子也是一份工作。'],['自己','我是不是很懶？是不是不夠愛他？','把電留給最重要的事，不是懶。'],['鄰居','你家孩子這麼吵都不管一下？','孩子吵鬧是正常的。'],['家長群組','其他家長都準備好了。','不用和別人比。']],
+  help:[['自己','找人幫忙，就代表我不行。','懂得找幫手是本事。'],['老公','你整天在家，有多辛苦？','你現在就知道有多辛苦。'],['婆婆','請人帶？這樣孩子怎麼跟你親？','愛不是靠每件事都親手做。'],['自己','又麻煩別人，別人會覺得我很煩。','求助不是麻煩別人。']],
+  delay:[['網路','拖拖拉拉，難怪家裡這麼亂。','家裡亂不代表你失敗。'],['老師','又遲交？家長要多盯一點。','晚一天不會影響一輩子。'],['自己','我什麼都做不好。','今天做不完也沒關係。'],['婆婆','明天？你總是說明天。','排優先順序是智慧。']]}
+});
+
+Object.assign(L.tw.ui,{signNext:'看今天的體驗結果',signRes:'結果',signBack:'回到老公靈籤，分享到限時動態',
+ hmFallT:'斷電之後，家裡發生了什麼事？',
+ hmFall:[['kid','19:10・孩子','你大聲罵了他：「講了多少次！快一點！」','他縮在角落，小聲問：「媽媽，是不是我不乖？」'],
+  ['dad','19:40・老公','老公問：「今晚吃什麼？」你爆炸了：「你自己不會看嗎！」','他覺得你無理取鬧，你覺得沒人懂你。兩個人整晚沒說話。'],
+  ['mess','20:30・家裡','飯燒焦了，聯絡簿沒簽，功課沒看，衣服還沒晾。','你覺得自己什麼都做不好。'],
+  ['night','23:50・自己','孩子睡了，你一個人在廁所哭了十分鐘。','然後擦乾眼淚，收好明天的書包。']],
+ hmFallEnd:'這些不是脾氣差，是沒電的後果。她每次大聲之前，其實已經撐了很久。',
+ hmFallEnd_hmn:'這些不是{w}脾氣差，是沒電的後果。{w}每次大聲之前，其實已經撐了很久。',
+ hmFallAsk:'下次她大聲，不要問「你幹嘛脾氣這麼大？」試著說：「你沒電了，我來。」',
+ hmFallAsk_hmn:'下次{w}大聲，不要問「你幹嘛脾氣這麼大？」試著說：「你沒電了，我來。」',
+ hmFallGo:'我明白了',
+ invFri:'邀請朋友玩，順便教育她老公',
+ invFriTx:'我在玩《留一格電》，當一個媽媽撐過星期三到星期日，記得留一格電給自己。還有「老公體驗模式」，可以幫你順便教育老公 😏 免費、不用登入，你也試試看：',
+ shareB:'選一張，儲存或分享到 IG、傳給老公，幫你順便教育他。每張都有 QR code，朋友一掃就能玩。',
+ cardScan:'掃我留一格電，順便教育老公',
+ signTxtW:'我老公玩《留一格電》當了一天媽媽，抽到上上籤！你也讓老公玩，幫你教育他 👉',
+ signTxtL:'我玩《留一格電》當了一天媽媽，抽到下下籤……老婆我錯了。你也讓老公玩，幫你教育他 👉'
+});
+Object.assign(L.tw.ui,{invFri_nd:'邀請朋友玩',invFriTx_nd:'我在玩《留一格電》，當一個媽媽撐過星期三到星期日，記得留一格電給自己。免費、不用登入，你也試試看：',cardScan_nd:'掃我，留一格電給自己'});
+Object.assign(L.tw.ui,{sumEnd_hm:'抽一支老公靈籤'});
 
 /* ================= English ================= */
 L.en={
@@ -1807,8 +2116,8 @@ L.en.help.n.tw1925=['Mental Health Hotline 1925','24 hours, free'];
 L.en.ui.helpRegion='Pick your phone’s country code';
 Object.assign(L.en.ui,{
  hmBtn:'👨 Husband mode: be Mum for a day',hmT:'Husband mode',
- hmIntro:'Today, you are Mum. Kids, chores, work and worries all count against your battery. Play one day and feel how she spends her energy.',
- qName_hm:'Your wife’s name (optional)',hmDayNote:'Husband mode: today, you are Mum.',sumEnd_hm:'See how you did',shareDad_hm:'Send to my wife',
+ hmIntro:'Today, you are Mum. Kids, chores, work and worries all count against your battery. Play one day and feel how she spends her energy. Every time you decide, a voice will judge you, just like the ones she hears every day.',
+ qName_hm:'Your wife’s name (optional)',hmDayNote:'Husband mode: today, you are Mum. When a voice pops up, tap “I’m doing my best” fast.',sumEnd_hm:'See how you did',shareDad_hm:'Send to my wife',
  waText_hm:'I played Mama’s Last Battery and was Mum for a day. I had no idea how hard your days are. I’ve got the dishes tonight, you rest 🫶',
  loseB1_hm:'You were too worn out, and you shouted.',loseB2_hm:'This is how your wife feels on a lot of days. It isn’t a bad temper. Her battery is flat.',loseB3_hm:'The kids will always love her. What she needs most isn’t advice. It’s someone to help her recharge.',
  loseTip_hm:'Tonight, try this: don’t ask. Just take one job off her hands so she can sit down.',
@@ -1891,6 +2200,56 @@ Object.assign(L.en.ui,{
  hmSend_hmn:'Send to {w}: “I’ve got tonight”',
  waText_hmn:'{w}, I played Mama’s Last Battery and was Mum for a day. I had no idea how hard your days are. I’ve got the dishes tonight, you rest 🫶'
 });
+
+/* ---- v0.6 Hubby fortune stick share page ---- */
+Object.assign(L.en.ui,{
+ signBtn:'Draw a Hubby fortune stick for your story',signT:'Hubby fortune stick',
+ signBW:'You made it! Pick two promises, draw a lucky stick and post it to your story for your wife.',
+ signBL:'Battery flat. Let your wife pick two penalties, draw an unlucky stick and post your apology to your story.',
+ signName:'Hubby’s name (optional)',signNameDef:'Hubby',signPick:'Pick up to two',
+ signNoW:'No. 8',signNoL:'No. 18',signLotW:'TOP LUCK',signLotL:'BAD LUCK',
+ signTitleW:'Certified Good Hubby',signTitleL:'Hubby’s Apology',signCert:'This certifies {n}',
+ signW1:'did a full day as Mum',signW2:'with {p}% left at bedtime',signL1:'tried a day as Mum',signL2:'and ran flat at {tm}',signL2b:'with only {p}% at bedtime',
+ signStampW:'PASSED',signStampL:'FAILED',
+ signVerseW:'One bar kept till dawn|A smiling wife, a peaceful home',signVerseL:'Battery gone, wife’s patience too|Do the dishes and peace returns',
+ signPickW:'Hubby promises:',signPickL:'Wife’s verdict:',
+ signOptW:'baby:I do bedtime|egg:Breakfast is on me|sleep:She sleeps early|flower:Flowers for her|dish:Dishes tonight|game:1 hour of gaming',
+ signOptL:'kb:Kneel on keyboard|dish:Dishes for a week|flower:Flowers for her|baby:Kids all day|sorry:“Sorry, honey”',
+ signCtaW:'Mine made it.|Can yours?|@tag 3 mums',signCtaL:'How long would yours last?|Scan and let him try|@tag your wife',
+ signSave:'Save image',signShare:'Share to story',
+ signTxtW:'My husband played Mama’s Last Battery, did a day as Mum and drew the lucky stick! Could yours?',signTxtL:'I played Mama’s Last Battery as Mum for a day and drew the unlucky stick… Sorry, honey. How long would yours last?'
+});
+
+Object.assign(L.en.ui,{sgSorry:'sorry',
+ puaT:'That voice again',puaNo:'I’m doing my best',puaYes:'Maybe they’re right…',puaHint:'Tap “I’m doing my best” quickly (−{a}%). If you don’t, it sinks in (−{b}%).',
+ puaOkT:'You pushed back −{n}%.',puaSunkT:'It sank in −{n}%. Mums hear this every day.',
+ puaV:{
+  do:[['Yourself','Finish this first, or you’re just lazy.','You don’t have to finish everything to deserve a rest.'],['Mother-in-law','I raised three and never complained this much.','Every generation has its own hard.'],['Boss','You’ve been leaving early a lot.','Caring for your family isn’t slacking.'],['Online','Other mums still find time for the gym and a home-cooked dinner.','Online you only see their best side.'],['Yourself','So slow. You’re useless.','Slow is still doing. You’re doing well.']],
+  let:[['Mother-in-law','You’re not even dealing with it? The kids will go wild.','Letting go once won’t spoil a child.'],['Relative','You don’t even work. How is it this messy?','Full-time parenting is a job.'],['Yourself','Am I lazy? Do I not love them enough?','Saving battery for what matters isn’t lazy.'],['Neighbour','Your kid is so loud and you just let them?','Kids are loud. That’s normal.'],['Parents’ chat','Everyone else is already prepared.','You don’t need to compare.']],
+  help:[['Yourself','Asking for help means I can’t cope.','Knowing when to ask is a strength.'],['Husband','You’re home all day, how hard can it be?','Now you know how hard.'],['Mother-in-law','Someone else minding them? They won’t be close to you.','Love isn’t doing every task yourself.'],['Yourself','I’m bothering people again. They’ll get sick of me.','Asking for help isn’t a bother.']],
+  delay:[['Online','Always putting things off. No wonder the house is a mess.','A messy house doesn’t mean you failed.'],['Teacher','Late again? Parents need to keep on top of this.','One day late won’t matter in a lifetime.'],['Yourself','I can’t do anything right.','It’s okay not to finish today.'],['Mother-in-law','Tomorrow? You always say tomorrow.','Setting priorities is wise.']]}
+});
+
+Object.assign(L.en.ui,{signNext:'See today’s results',signRes:'Results',signBack:'Back to the fortune stick, share to story',
+ hmFallT:'After the battery ran out, what happened at home?',
+ hmFall:[['kid','7:10pm・Your child','You shouted: “How many times have I told you? Hurry up!”','They curled up in a corner and whispered: “Mummy, am I bad?”'],
+  ['dad','7:40pm・Your husband','He asked “What’s for dinner?” and you snapped: “Can’t you look for yourself?”','He thinks you’re being unreasonable. You feel nobody understands. Nobody speaks all evening.'],
+  ['mess','8:30pm・The house','Dinner burned. The school form isn’t signed. Homework unchecked. Laundry still in the machine.','You feel like you can’t do anything right.'],
+  ['night','11:50pm・Just you','The kids are asleep. You cry in the bathroom for ten minutes.','Then you dry your eyes and pack tomorrow’s school bag.']],
+ hmFallEnd:'That isn’t a bad temper. It’s what a flat battery looks like. Before she raises her voice, she has been holding on for a long time.',
+ hmFallEnd_hmn:'That isn’t {w} having a bad temper. It’s what a flat battery looks like. Before {w} raises her voice, she has been holding on for a long time.',
+ hmFallAsk:'Next time she snaps, don’t ask “Why are you so angry?” Try: “Your battery’s flat. I’ve got this.”',
+ hmFallAsk_hmn:'Next time {w} snaps, don’t ask “Why are you so angry?” Try: “Your battery’s flat. I’ve got this.”',
+ hmFallGo:'I get it now',
+ invFri:'Invite a friend (and educate her husband)',
+ invFriTx:'I’m playing Mama’s Last Battery: get through Wednesday to Sunday as a mum, and save a bar of battery for yourself. There’s also a Husband mode to give yours a little education 😏 Free, no sign-up. Try it: ',
+ shareB:'Pick one, then save it or share it to Instagram or WhatsApp your husband, and educate him a little. Every card has a QR code, so friends can scan and play.',
+ cardScan:'Scan me, keep a bar, educate your husband',
+ signTxtW:'My husband played Mama’s Last Battery, did a day as Mum and drew the lucky stick! Get yours to play and educate him 👉',
+ signTxtL:'I played Mama’s Last Battery as Mum for a day and drew the unlucky stick… Sorry, honey. Get your husband to play and educate him 👉'
+});
+Object.assign(L.en.ui,{invFri_nd:'Invite a friend',invFriTx_nd:'I’m playing Mama’s Last Battery: get through Wednesday to Sunday as a mum, and save a bar of battery for yourself. Free, no sign-up. Try it: ',cardScan_nd:'Scan me and keep a bar for yourself'});
+Object.assign(L.en.ui,{sumEnd_hm:'Draw your fortune stick'});
 
 /* ================= 简体中文（大陆）: generated from tw.js ================= */
 L.cn={
@@ -2230,8 +2589,8 @@ L.cn.help.n.tw1925=['安心专线 1925','24 小时 · 免费'];L.cn.help.n.tw080
 L.cn.ui.helpRegion='选你电话的国际区号';
 Object.assign(L.cn.ui,{
  hmBtn:'👨 老公体验模式：当一天妈妈',hmT:'老公体验模式',
- hmIntro:'老公，今天由你当妈妈。顾小孩、家事、上班、担心，全部算你的。玩一天，感受一下她每天怎么用电。',
- qName_hm:'老婆的名字（可以不填）',hmDayNote:'老公体验模式：今天你是妈妈。',sumEnd_hm:'看体验结果',shareDad_hm:'传给老婆',
+ hmIntro:'老公，今天由你当妈妈。顾小孩、家事、上班、担心，全部算你的。玩一天，感受一下她每天怎么用电。每次做决定，都会有个声音跳出来批评你，就像她每天听到的一样。',
+ qName_hm:'老婆的名字（可以不填）',hmDayNote:'老公体验模式：今天你是妈妈。声音跳出来时，快按「我已经尽力了」。',sumEnd_hm:'看体验结果',shareDad_hm:'传给老婆',
  waText_hm:'老婆，我玩了《留一格电》当了一天妈妈，原来你每天这么辛苦。今晚碗我洗，你休息一下 🫶',
  loseB1_hm:'你累到撑不住，大声了。',loseB2_hm:'这就是老婆很多天的感觉。她不是脾气差，是没电了。',loseB3_hm:'孩子永远都爱她。她最需要的不是建议，是有人帮她充电。',
  loseTip_hm:'今晚试试看：不用问，直接接手一件事，让老婆坐下来。',
@@ -2277,7 +2636,7 @@ Object.assign(L.cn.ui,{
  invFriTx:'我在玩《留一格电》，当一个妈妈撑过星期三到星期日，记得留一格电给自己。免费、不用登录，你也试试看：',
  invDadTx:'老公，这个游戏有「老公体验模式」，你试试看当一天妈妈，我想让你知道我每天是怎么过的 🫶 ',
  invCopied:'已经复制好了，贴给对方就好',
- hmInvited:'有人邀请你玩「老公体验模式」',hmInvitedB:'今天由你当妈妈。玩一天，感受一下她每天怎么用电。',hmInvGo:'开始当一天妈妈',
+ hmInvited:'有人邀请你玩「老公体验模式」',hmInvitedB:'今天由你当妈妈。玩一天，感受一下她每天怎么用电。每次做决定，都会有个声音跳出来批评你，就像她每天听到的一样。',hmInvGo:'开始当一天妈妈',
  crName:'Katy・@misskw3_3',crLine:'香港妈妈，正在走出忧郁。这个游戏送给每一位 supermom。',crIG:'Instagram',crSite:'个人网站',crAbout:'Katy 的话・关于游戏',
  katyT:'Katy 的话',katySign:'Katy・@misskw3_3',menuAbout:'Katy 的话・关于游戏',
  aboutRef:'游戏里的方法参考了自我疼惜、认知行为治疗、「断裂与修补」（rupture and repair）的亲子研究、安全圈，以及正念。粤语正念录音由 Katy 亲自录制。本游戏不能取代专业治疗。',
@@ -2315,6 +2674,56 @@ Object.assign(L.cn.ui,{
  waText_hmn:'{w}，我玩了《留一格电》当了一天妈妈，原来你每天这么辛苦。今晚碗我洗，你休息一下 🫶'
 });
 
+/* ---- v0.6 老公灵签 share page ---- */
+Object.assign(L.cn.ui,{
+ signBtn:'抽一支老公灵签，分享到限时动态',signT:'老公灵签',
+ signBW:'挑战成功！选两项承诺，产生一支上上签，分享到限时动态给老婆看。',
+ signBL:'没电了。请老婆选两项惩罚，产生一支下下签，分享到限时动态认错。',
+ signName:'老公的名字（可不填）',signNameDef:'老公',signPick:'最多选两项',
+ signNoW:'第八签',signNoL:'第十八签',signLotW:'上上签',signLotL:'下下签',
+ signTitleW:'好老公认证',signTitleL:'老公认错书',signCert:'兹证明 {n}',
+ signW1:'当了一整天妈妈',signW2:'睡前还有 {p}% 电',signL1:'当一天妈妈',signL2:'撑到 {tm} 没电',signL2b:'睡前只剩 {p}% 电',
+ signStampW:'挑战|成功',signStampL:'挑战|失败',
+ signVerseW:'一格电量　守到天明|老婆展颜　家宅安康',signVerseL:'电量归零　老婆发威|速速洗碗　方保平安',
+ signPickW:'老公承诺：',signPickL:'老婆裁定惩罚：',
+ signOptW:'baby:今晚我顾小孩|egg:明天早餐我做|sleep:老婆早点睡|flower:送花给老婆|dish:今晚碗我洗|game:老婆赏我打游戏',
+ signOptL:'kb:跪键盘|dish:洗碗一星期|flower:送花给老婆|baby:顾小孩一整天|sorry:老婆我错了',
+ signCtaW:'我老公做到了|你老公呢？|@tag 3 位妈妈',signCtaL:'你老公撑到几点？|扫码让他抽一支|@tag 你老婆',
+ signSave:'保存图片',signShare:'分享到限时动态',
+ signTxtW:'我老公玩《留一格电》当了一天妈妈，抽到上上签！你老公呢？',signTxtL:'我玩《留一格电》当了一天妈妈，抽到下下签……老婆我错了。你老公撑得到几点？'
+});
+
+Object.assign(L.cn.ui,{sgSorry:'知错',
+ puaT:'那个声音又来了',puaNo:'我已经尽力了',puaYes:'他说得对……',puaHint:'快按「我已经尽力了」（−{a}%）。不按的话，它会被你听进心里（−{b}%）。',
+ puaOkT:'顶回去了 −{n}%。',puaSunkT:'听进心里了 −{n}%。妈妈每天都听着这些话。',
+ puaV:{
+  do:[['自己','做完这件才可以休息，不然就是懒。','不用全部做完才值得休息。'],['婆婆','我以前带三个都没你这么多话。','每个年代都有它的辛苦。'],['老板','你最近常常早退哦。','照顾家庭不是偷懒。'],['网络','别人的妈妈还有时间上健身房、煮四菜一汤。','网络上只看到别人最好的一面。'],['自己','做得这么慢，你真没用。','慢慢做也是在做，已经很棒。']],
+  let:[['婆婆','这样都不管？孩子会学坏的。','放手一次，不会教坏孩子。'],['亲戚','你又不用上班，怎么搞成这样？','全职带孩子也是一份工作。'],['自己','我是不是很懒？是不是不够爱他？','把电留给最重要的事，不是懒。'],['邻居','你家孩子这么吵都不管一下？','孩子吵闹是正常的。'],['家长群组','其他家长都准备好了。','不用和别人比。']],
+  help:[['自己','找人帮忙，就代表我不行。','懂得找帮手是本事。'],['老公','你整天在家，有多辛苦？','你现在就知道有多辛苦。'],['婆婆','请人带？这样孩子怎么跟你亲？','爱不是靠每件事都亲手做。'],['自己','又麻烦别人，别人会觉得我很烦。','求助不是麻烦别人。']],
+  delay:[['网络','拖拖拉拉，难怪家里这么乱。','家里乱不代表你失败。'],['老师','又迟交？家长要多盯一点。','晚一天不会影响一辈子。'],['自己','我什么都做不好。','今天做不完也没关系。'],['婆婆','明天？你总是说明天。','排优先级是智能。']]}
+});
+
+Object.assign(L.cn.ui,{signNext:'看今天的体验结果',signRes:'结果',signBack:'回到老公灵签，分享到限时动态',
+ hmFallT:'断电之后，家里发生了什么事？',
+ hmFall:[['kid','19:10・孩子','你大声骂了他：「讲了多少次！快一点！」','他缩在角落，小声问：「妈妈，是不是我不乖？」'],
+  ['dad','19:40・老公','老公问：「今晚吃什么？」你爆炸了：「你自己不会看吗！」','他觉得你无理取闹，你觉得没人懂你。两个人整晚没说话。'],
+  ['mess','20:30・家里','饭烧焦了，联系簿没签，功课没看，衣服还没晾。','你觉得自己什么都做不好。'],
+  ['night','23:50・自己','孩子睡了，你一个人在厕所哭了十分钟。','然后擦干眼泪，收好明天的书包。']],
+ hmFallEnd:'这些不是脾气差，是没电的后果。她每次大声之前，其实已经撑了很久。',
+ hmFallEnd_hmn:'这些不是{w}脾气差，是没电的后果。{w}每次大声之前，其实已经撑了很久。',
+ hmFallAsk:'下次她大声，不要问「你干嘛脾气这么大？」试着说：「你没电了，我来。」',
+ hmFallAsk_hmn:'下次{w}大声，不要问「你干嘛脾气这么大？」试着说：「你没电了，我来。」',
+ hmFallGo:'我明白了',
+ invFri:'邀请朋友玩，顺便教育她老公',
+ invFriTx:'我在玩《留一格电》，当一个妈妈撑过星期三到星期日，记得留一格电给自己。还有「老公体验模式」，可以帮你顺便教育老公 😏 免费、不用登录，你也试试看：',
+ shareB:'选一张，保存或分享到朋友圈、发给老公，帮你顺便教育他。每张都有 QR code，朋友一扫就能玩。',
+ cardScan:'扫我留一格电，顺便教育老公',
+ signTxtW:'我老公玩《留一格电》当了一天妈妈，抽到上上签！你也让老公玩，帮你教育他 👉',
+ signTxtL:'我玩《留一格电》当了一天妈妈，抽到下下签……老婆我错了。你也让老公玩，帮你教育他 👉'
+});
+Object.assign(L.cn.ui,{invFri_nd:'邀请朋友玩',invFriTx_nd:'我在玩《留一格电》，当一个妈妈撑过星期三到星期日，记得留一格电给自己。免费、不用登录，你也试试看：',cardScan_nd:'扫我，留一格电给自己'});
+Object.assign(L.cn.ui,{sumEnd_hm:'抽一支老公灵签'});
+
 /* ---- 简体中文（大陆）手写覆盖：微信不能直接发送，一律写「复制」 ---- */
 Object.assign(L.cn.ui,{
  sosWA:'复制一句话给老公：「我没电了」',sosWAd:'复制好后，打开微信粘贴发给他',
@@ -2330,6 +2739,8 @@ Object.assign(L.cn.ui,{
 L.cn.katy=['致敬香港所有的 supermom。','衣食住行、吃喝拉撒睡、教孩子、考学校、兴趣班、写作业、家务、上班…… 永远觉得自己可以做得更好……（其实谁教过我们？）','Katy 小时候没有美好的童年，长大后仍然想做一个足够好的妈妈。我也经历过产前产后抑郁，我也喂过母乳。','温柔而坚定，曾经是我从未学过的日语。因为孩子感受得到我内心深处所有的匮乏，所以他不安、敏感。Katy 花了几年时间，学一套新的语言，学习照顾自己。然后，我得到了一个活泼开朗的孩子，和愉快的亲子关系。','妈妈总是在努力照顾别人，这次换我来照顾你。希望你也学会好好照顾自己 ❤️'];
 
 Object.assign(L.cn.ui,{hmSend_hmn:'复制一句话给{w}：「今晚我来」'});
+
+Object.assign(L.cn.ui,{signBtn:'抽一支老公灵签，分享到朋友圈',signShare:'保存后分享到朋友圈',signBW:'挑战成功！选两项承诺，生成一支上上签，分享到朋友圈给老婆看。',signBL:'没电了。请老婆选两项惩罚，生成一支下下签，分享到朋友圈认错。'});
 
 /* ================= LANGUAGE ================= */
 var LANG='yue',X=null;
@@ -2894,7 +3305,7 @@ function gCoffee(mode){
   cq('#cstart').onclick=run;
   var timer=null;
   function run(){
-    var temp=90,sips=0,cur=null,list=shuffle(ndArr(X.chill.intr).map(function(x){return {q:x[0],u:x[1]}})).slice(0,5),idx=0,nextAt=1.4,t=0,flash='',lock=0;
+    var temp=90,sips=0,cur=null,list=shuffle(ndArr(X.chill.intr).map(function(x){return {q:x[0],u:x[1]}})).slice(0,5),idx=0,nextAt=1.4,tt=0,flash='',lock=0;
     function paint(){
       if(!C)return;
       var h=chillHead('coffee',mode)+'<div class="scroll"><div class="bar" style="min-height:0"><span class="body">'+X.chill.temp+'</span><span class="mono" id="ct">'+Math.round(temp)+'°C</span></div><div class="thermo"><i id="th" style="width:'+Math.max(0,(temp-45)/45*100)+'%"></i></div>'+
@@ -2916,8 +3327,8 @@ function gCoffee(mode){
     }
     paint();
     timer=setInterval(function(){
-      t+=0.1;temp-=0.24;if(lock>0){lock-=0.1;if(lock<=0&&!cur)paint()}
-      if(!cur&&idx<list.length&&t>=nextAt){cur=list[idx++];nextAt=t+1.7;paint()}
+      tt+=0.1;temp-=0.24;if(lock>0){lock-=0.1;if(lock<=0&&!cur)paint()}
+      if(!cur&&idx<list.length&&tt>=nextAt){cur=list[idx++];nextAt=tt+1.7;paint()}
       if(temp<=45){finish(false);return}
       var th=cq('#th');if(th)th.style.width=Math.max(0,(temp-45)/45*100)+'%';var ct=cq('#ct');if(ct)ct.textContent=Math.round(temp)+'°C';
     },100);
@@ -2931,7 +3342,7 @@ function breathing(el,cycles,photo,onDone){
   el.innerHTML='<div class="breathwrap"><svg viewBox="0 0 300 300" aria-hidden="true"><circle cx="150" cy="150" r="136" fill="none" stroke="#e6d9c4" stroke-width="10"/><circle class="bring" cx="150" cy="150" r="136" fill="none" stroke="#e8836b" stroke-width="10" stroke-linecap="round" stroke-dasharray="0 855" transform="rotate(-90 150 150)"/>'+(photo?'':'<circle class="bcore" cx="150" cy="150" r="70" fill="#f2b8a0" opacity=".9"/>')+'</svg>'+
    (photo?'<div class="breathphoto bph">'+photo+'</div>':'<div class="breathcore"><span class="bl">'+X.chill.bin+'</span><span class="bn">4</span><span class="bs">'+X.chill.bsec+'</span></div>')+'</div>'+
    (photo?'<div style="text-align:center;font-weight:900;font-size:20px"><span class="bl">'+X.chill.bin+'</span>　<span class="bn mono">4</span></div>':'')+
-   '<div class="prog3" style="justify-content:center;margin-top:8px">'+Array.apply(null,{length:cycles}).map(function(){return '<i></i>'}).join('')+'<span class="bc" style="margin-left:6px;font-size:13px;font-weight:700">'+fmt(X.chill.bcount,{a:1,b:cycles})+'</span></div>';
+   '<div class="prog3" style="justify-content:center;margin-top:8px">'+Array.apply(null,{length:cycles}).map(function(){return '<i></i>'}).join('')+'<span class="bc" style="margin-left:6px;font-size:15.5px;font-weight:700">'+fmt(X.chill.bcount,{a:1,b:cycles})+'</span></div>';
   var ring=$('.bring',el),core=$('.bcore',el),ph=$('.bph',el),bl=$('.bl',el),bn=$('.bn',el),bc=$('.bc',el),dots=$$('.prog3 i',el);
   function ease(x){return 0.5-0.5*Math.cos(Math.PI*x)}
   function tick(now){
@@ -3315,7 +3726,7 @@ function buildDay(){
 }
 function startDay(){
   var lastLose=S.results.length&&S.results[S.results.length-1].w===false;
-  S.p=lastLose?TUNE.startLose:TUNE.startWin;S.clock=S.day===7?8:7;S.si=0;S.worries=[];S.burst=false;S.helpToday=false;S.letToday=0;S.attachToday=false;
+  S.p=S.hm?TUNE.hmStart:(lastLose?TUNE.startLose:TUNE.startWin);S.clock=S.day===7?8:7;S.si=0;S.worries=[];S.burst=false;S.helpToday=false;S.letToday=0;S.attachToday=false;
   S.weather=null;S.spark=null;S.sparkN=0;S.night=null;S.dadOT=false;S.helperOut=false;S.grandUsed=0;S.helperUsed=0;S.sosLeft=TUNE.sosMax+(!S.helper&&!S.grand?1:0);S.waUsed=false;S.friendUsed=false;S.dadHelp=-1;S.lastL=lvl(S.p);
   S.rec={day:S.day,cos:{top:0,bot:0,lead:0}};buildDay();S.phase='intro';save();frame();dayIntro(lastLose);
 }
@@ -3342,7 +3753,7 @@ function done1(){S.si++;save()}
 function bbExtra(e){return e.bb&&S.p<40?5:0}
 function costs(e,it){
   var ex=bbExtra(e),tx=dadTax(e),r={};
-  r.do=e.do!==undefined?Math.max(0,Math.round(e.do*TUNE.doMult)+ex+tx):null;
+  r.do=e.do!==undefined?Math.max(0,Math.round(e.do*TUNE.doMult*(S.hm?TUNE.hmDo:1))+ex+tx):null;
   r.let=(e.let!==undefined&&evText(e.id)[4])?Math.max(0,Math.round((e.let||0)*TUNE.letMult)+TUNE.letBase+(e.let?ex:0)+Math.max(0,tx)):null;
   r.help=e.h.length&&evText(e.id)[5]?(e.hc||0):null;
   r.delay=e.dl&&evText(e.id)[6]&&!it.d?0:null;
@@ -3407,7 +3818,7 @@ function resolveHelp(it,x){
   if(!ok){it.msg=t('tryAgain');save();sheet('<div class="res">'+resLine(cost)+'<div><h3>'+esc(x.name)+'</h3><p class="body">'+msg+'</p>'+trustLine+'</div></div><button class="btn" id="go">'+t('next')+'</button>');$('#go').onclick=function(){showEv(it,'')};return}
   var wk=e.h&&evText(e.id)[9]?evText(e.id)[9]:'';wk+=cosMark(it.id,'help');
   maybeSpark();done1();hero(true);
-  sheet('<div class="res">'+resLine(cost)+'<div><h3>'+t('oHelp')+'・'+esc(x.name)+'</h3><p class="body">'+msg+(wk?'<br>'+wk:'')+'</p>'+trustLine+'</div></div><button class="btn" id="go">'+t('next')+'</button>');$('#go').onclick=show;$('#go').focus();
+  var fin=function(){sheet('<div class="res">'+resLine(cost)+'<div><h3>'+t('oHelp')+'・'+esc(x.name)+'</h3><p class="body">'+msg+(wk?'<br>'+wk:'')+'</p>'+trustLine+'</div></div><button class="btn" id="go">'+t('next')+'</button>');$('#go').onclick=show;$('#go').focus()};if(S.hm)puaVoice('help',fin);else fin();
 }
 function choose(it,v){
   var e=EVDEF[it.id],tx=evText(it.id),c=costs(e,it),cost=c[v];
@@ -3424,7 +3835,7 @@ function choose(it,v){
   maybeSpark();done1();hero(true);
   if(S.p<=0){lose('now');return}
   function result(){sheet('<div class="res">'+resLine(cost)+'<div><h3>'+{do:t('oDo'),let:t('oLet'),delay:t('oDelay')}[v]+'</h3><p class="body">'+msg+'</p></div></div><button class="btn" id="go">'+t('next')+'</button>');$('#go').onclick=show;$('#go').focus()}
-  if(burst){S.burst=true;repair(result)}else result();
+  var fin=function(){if(burst){S.burst=true;repair(result)}else result()};if(S.hm)puaVoice(v,fin);else fin();
 }
 function repair(after){
   openOv();var steps=t('repair'),got=[];
@@ -3557,7 +3968,7 @@ function playVoice(V){
 /* ---------- end of day: win or lose ---------- */
 function endOfDay(){advanceTo(22);if(S.p<20)lose('low');else win()}
 function recordDay(w){
-  S.results[S.day-FIRST]={w:w,p:Math.round(S.p)};S.streak=w?S.streak+1:0;if(S.streak>=3)badge('streak3');if(w&&S.results.filter(function(r){return r&&r.w}).length===1)badge('first');
+  S.results[S.day-FIRST]={w:w,p:Math.round(S.p),c:S.clock};S.streak=w?S.streak+1:0;if(S.streak>=3)badge('streak3');if(w&&S.results.filter(function(r){return r&&r.w}).length===1)badge('first');
   var H=HIST();H.days++;if(w){H.wins++;H.run=(H.run||0)+1;H.best=Math.max(H.best||0,H.run)}else H.run=0;store(KEYP+'hist',H);
   countHit('days');if(w)countHit('wins');
 }
@@ -3578,8 +3989,9 @@ function showLose(){
      '<div class="shout" id="sh" hidden>'+momShout()+'<div class="yell">'+X.lose.yell[ag]+'</div><div class="react">'+X.lose.react[ag]+'</div></div><button class="btn" id="nx" hidden>'+t('next')+'</button></div>';
     tone(220,0.9,0.12,'triangle',0,70);
     setTimeout(function(){var s=cq('#sh');if(s){s.hidden=false;tone(160,0.3,0.1,'square');buzz([80,60,80])}var n=cq('#nx');if(n)n.hidden=false},RM?200:1700);
-    cq('#nx').onclick=function(){N.stage='talk';save();showLose()};return;
+    cq('#nx').onclick=function(){N.stage=S.hm?'fall':'talk';save();showLose()};return;
   }
+  if(N.stage==='fall'){showFallout();return}
   if(N.stage==='talk'){
     openOv('blackov');
     C.innerHTML='<div class="blackout"><p class="loseline">'+t('loseB1')+'</p><p class="loseline">'+t('loseB2')+'</p><p class="loseline soft">'+t('loseB3')+'</p><button class="btn warm" id="nx">'+t('loseRepair')+'</button></div>';
@@ -3623,8 +4035,8 @@ function showNight(){
     var x=N.cloud;
     $('#clouds').innerHTML='<button class="cloud big" id="cl" style="left:50%;top:36%"><span>'+x[0]+'</span></button>';
     var h='<div class="time">'+t('nightT')+'</div><h2>'+t('cloudT')+'</h2>';
-    if(!N.rev)h+='<div class="card2"><div class="time">'+t('cloudSays')+'</div><div style="font-weight:900;font-size:18px;margin-top:2px">'+x[0]+'</div></div><button class="btn" id="rev">'+t('reframe')+'</button>';
-    else h+='<div class="card2"><div class="time">'+t('cloudSays')+'</div><div style="text-decoration:line-through;opacity:.55;font-size:14px;font-weight:700">'+x[0]+'</div><div class="time" style="margin-top:10px">'+t('reframe')+'</div><div class="reframe">'+x[1]+'</div></div><button class="btn warm" id="blow">'+t('cloudBlow')+'</button>';
+    if(!N.rev)h+='<div class="card2"><div class="time">'+t('cloudSays')+'</div><div style="font-weight:900;font-size:20px;margin-top:2px">'+x[0]+'</div></div><button class="btn" id="rev">'+t('reframe')+'</button>';
+    else h+='<div class="card2"><div class="time">'+t('cloudSays')+'</div><div style="text-decoration:line-through;opacity:.55;font-size:16.5px;font-weight:700">'+x[0]+'</div><div class="time" style="margin-top:10px">'+t('reframe')+'</div><div class="reframe">'+x[1]+'</div></div><button class="btn warm" id="blow">'+t('cloudBlow')+'</button>';
     sheet(h);
     function rev(){N.rev=true;save();showNight()}
     if($('#rev'))$('#rev').onclick=rev;$('#cl').onclick=function(){if(!N.rev)rev()};
@@ -3674,7 +4086,7 @@ function nextDay(){
 
 /* ---------- ending ---------- */
 function showEnding(){
-  if(S.hm){showHMEnd();return}
+  if(S.hm){showSign();return}
   var wins=S.results.filter(function(r){return r&&r.w}).length,ei=wins>=5?3:(wins>=4?2:(wins>=2?1:0)),E1=X.ending[ei],di=S.trust>=70?2:(S.trust>=40?1:0),D1=X.dadEnd[di];
   openOv();
   var h='<div class="bar"><b>'+t('endT')+'</b><button class="pill" id="eh">'+t('help')+'</button></div><div class="scroll">';
@@ -3842,12 +4254,14 @@ function showHMEnd(){
   h+='<div style="border-radius:24px;overflow:hidden;height:170px;position:relative;margin-top:6px">'+houseSVG(R.w?90:15,true,null)+'</div>';
   h+='<div class="bigtitle" style="font-size:34px;margin-top:10px">'+t('hmEndT')+'</div><p class="body">'+(R.w?t('hmWin',{p:R.p}):t('hmLose'))+'</p>';
   h+='<p class="body">'+t('hmStats',{h:S.used.help,l:S.used.let})+'</p>';
+  h+='<button class="btn sgbtn" id="hq">'+sgSvg(R.w?'flower':'kb',34)+' '+t('signBack')+'</button>';
   h+='<div class="sec">'+t('hmListT')+'</div><ol class="hmtips">'+tips.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ol>';
   h+='<div class="card2 cos-bat"><p class="hand" style="font-size:19px;line-height:1.6">'+t('hmCos')+'</p></div>';
-  h+='<button class="btn warm" id="hs">'+t('hmSend')+'</button><button class="btn soft" id="ha">'+t('hmAgain')+'</button><button class="btn soft" id="hh">'+t('hmHome')+'</button>'+crCard()+invCard(true)+''+invCard(true)+crCard()+'<p class="fine">'+t('madeBy')+' '+VERSION+'</p></div>';
+    h+='<button class="btn warm" id="hs">'+t('hmSend')+'</button><button class="btn soft" id="ha">'+t('hmAgain')+'</button><button class="btn soft" id="hh">'+t('hmHome')+'</button>'+invCard(true)+crCard()+'<p class="fine">'+t('madeBy')+' '+VERSION+'</p></div>';
   C.innerHTML=h;
   cq('#hs').onclick=function(){countHit('hmsend');sendMsg(t('waText')+' '+GAME_URL)};
-  cq('#ha').onclick=function(){S=null;setup(true)};
+  cq('#hq').onclick=showSign;
+  cq('#ha').onclick=function(){S=null;SIGN.pick=null;setup(true)};
   cq('#hh').onclick=function(){S=null;showTitle()};
   cq('#eh').onclick=showHelp;
 }
@@ -3900,7 +4314,7 @@ function setup(hm){
   pick('#wk .age','data-k',function(k){o.work=k});
   pick('#hp button','data-v',function(v){o.helper=v==='1'});
   if(!hm)pick('#dp button','data-v',function(v){o.dad=v==='1';rules()});
-  cq('#nm').oninput=function(){o.name=this.value.trim();cq('#go').textContent=o.name&&!o.hm?fmt(t('goN'),{nm:esc(o.name)}):t('go')};
+  cq('#nm').oninput=function(){o.name=this.value.trim();cq('#go').textContent=o.name&&!o.hm?t('goN',{nm:esc(o.name)}):t('go')};
   cq('#bk').onclick=function(){NDP=false;HMP=false;showTitle()};
   cq('#go').onclick=function(){if(cq('#go').disabled)return;NDP=false;S=fresh(o);closeOv();ac();var H=HIST();H.games++;store(KEYP+'hist',H);countHit(o.hm?'hm':'games');HMP=false;startDay()};
   rules();upd();
@@ -4016,12 +4430,165 @@ function t(k,v){var u=X&&X.ui,s;
     else if(ND()&&u[k+'_nd']!==undefined)s=u[k+'_nd'];else s=u[k]}
   if(s===undefined)s=L.yue.ui[k];if(s===undefined)return k;
   if(typeof s!=='string')return s;
-  var w={nm:esc(NM()),w:esc(WN())};if(v)for(var a in v)w[a]=v[a];return fmt(s,w)}
+  var w={};if(NM())w.nm=esc(NM());if(WN())w.w=esc(WN());if(v)for(var a in v)w[a]=v[a];return fmt(s,w)}
+/* --- v0.6 Hubby mode: harder, and the voices every mum hears each time she decides --- */
+TUNE.hmStart=TUNE.hmStart||85;TUNE.hmDo=TUNE.hmDo||1.35;TUNE.puaP=TUNE.puaP||0.75;TUNE.puaSink=TUNE.puaSink||5;TUNE.puaOk=TUNE.puaOk||2;TUNE.puaSec=TUNE.puaSec||2.8;
+function puaVoice(v,fin){
+  var pool=(t('puaV')||{})[v];if(!pool||!pool.length||Math.random()>TUNE.puaP){fin();return}
+  var V=rnd(pool),done=false,tm=null;
+  function end(ok){if(done)return;done=true;clearTimeout(tm);$('#modal').hidden=true;var n=ok?TUNE.puaOk:TUNE.puaSink;sub(n);S.puaOk=(S.puaOk||0)+(ok?1:0);S.puaSunk=(S.puaSunk||0)+(ok?0:1);hero(true);
+    toast(ok?t('puaOkT',{n:n})+' '+V[2]:t('puaSunkT',{n:n}));if(S.p<=0){lose('now');return}fin()}
+  if(window.__fast){end(Math.random()<window.__fast.deflect);return}
+  modal('<div class="time">'+t('puaT')+'</div><div class="puab"><small>'+V[0]+'</small>'+V[1]+'</div><i class="puabar"><s style="animation-duration:'+TUNE.puaSec+'s"></s></i><p class="fine">'+t('puaHint',{a:TUNE.puaOk,b:TUNE.puaSink})+'</p>',
+    [[t('puaNo'),function(){end(true)},'warm'],[t('puaYes'),function(){end(false)},'soft']]);
+  tm=setTimeout(function(){end(false)},TUNE.puaSec*1000);
+}
+/* --- v0.6 老公靈籤: the share page after Hubby mode (only this page uses the red-and-gold look) --- */
+var SIGN={name:'',pick:null};
+function sgC(cx,cy,r){return 'M'+(cx-r)+' '+cy+'a'+r+' '+r+' 0 1 0 '+(2*r)+' 0a'+r+' '+r+' 0 1 0 '+(-2*r)+' 0'}
+function sgE(cx,cy,rx,ry){return 'M'+(cx-rx)+' '+cy+'a'+rx+' '+ry+' 0 1 0 '+(2*rx)+' 0a'+rx+' '+ry+' 0 1 0 '+(-2*rx)+' 0'}
+function sgR(x,y,w,h,r){return 'M'+(x+r)+' '+y+'h'+(w-2*r)+'q'+r+' 0 '+r+' '+r+'v'+(h-2*r)+'q0 '+r+' '+(-r)+' '+r+'h'+(-(w-2*r))+'q'+(-r)+' 0 '+(-r)+' '+(-r)+'v'+(-(h-2*r))+'q0 '+(-r)+' '+r+' '+(-r)+'z'}
+var SGI={
+ dish:{s:[sgC(30,13,7),'M23 11q7-7 14 0','M39 6q2 3 0 5q-2-2 0-5','M30 20v6M22 30l8-4 8 4',sgE(30,31,11,3.5),'M8 36h44l-5 14H13z',sgC(13,27,3),sgC(47,25,2.5),sgC(51,31,1.8)],f:[sgC(27.5,13.5,1.1),sgC(32.5,13.5,1.1)]},
+ kb:{s:[sgC(28,13,6.5),'M28 19.5v15M28 25l-6-5 1-7M28 25l6-5-1-7M28 34.5l9 10M37 44.5H20',sgR(7,46,46,8,1.5),'M12 50h3M18 50h3M24 50h3M30 50h3M36 50h3M42 50h3M48 50h1','M38 9q2 3 0 5q-2-2 0-5'],f:[sgC(26,13.5,1.1),sgC(30.5,13.5,1.1)]},
+ flower:{s:['M30 50L21 27M30 50V22M30 50l9-23',sgC(20,24,5.5),sgC(30,18,5.5),sgC(40,24,5.5),'M17 35l13 19 13-19z','M48 10c-2-3-6-1-4 2l4 4 4-4c2-3-2-5-4-2z'],f:[sgC(20,24,1.5),sgC(30,18,1.5),sgC(40,24,1.5)]},
+ baby:{s:[sgC(24,12,6.5),'M21 12h2M26 12h2','M24 18.5V40M24 40l-6 14M24 40l6 14M24 25l13 7M24 30l12 5',sgC(40,26,4.5),'M34 31q7 9 13 0'],f:[],tx:[['z z',44,12,9]]},
+ sorry:{s:[sgC(17,33,6),'M23 32h16M39 32v20M39 32l5 20M27 32l-3 10M33 32l-2 10',sgR(26,3,32,17,3),'M34 20l-3 5 7-5'],f:[],tx:[['sorry',42,15.5,8.5]]},
+ egg:{s:[sgC(26,36,15),'M41 36h15','M18 36q0-8 8-7q8-2 9 6q1 8-8 8q-9 1-9-7z','M20 10q3 4 0 8M28 8q3 4 0 8M36 10q3 4 0 8'],f:[sgC(26,36,3.5)]},
+ sleep:{s:[sgR(6,38,48,12,6),sgC(22,31,7),'M15 30q-2-9 7-9q9 0 8 9','M19 32q1.5 1.5 3 0M24 32q1.5 1.5 3 0','M48 8a9 9 0 1 0 6 13a7 7 0 0 1-6-13z'],f:[],tx:[['Z z',34,20,10]]},
+ game:{s:['M14 22h32c6 0 9 6 9 14s-3 12-7 12c-5 0-7-7-12-7H24c-5 0-7 7-12 7c-4 0-7-4-7-12s3-14 9-14z','M17 29v8M13 33h8'],f:[sgC(41,30,2),sgC(46,35,2)]}};
+function sgSvg(k,sz){var I=SGI[k],h='<svg width="'+sz+'" height="'+sz+'" viewBox="0 0 60 60" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">';
+  I.s.forEach(function(d){h+='<path d="'+d+'"/>'});h+='</g>';I.f.forEach(function(d){h+='<path d="'+d+'" fill="currentColor"/>'});
+  (I.tx||[]).forEach(function(x){h+='<text x="'+x[1]+'" y="'+x[2]+'" font-size="'+x[3]+'" text-anchor="'+(k==='sorry'?'middle':'start')+'" fill="currentColor">'+(k==='sorry'?esc(t('sgSorry')):x[0])+'</text>'});return h+'</svg>'}
+function sgDraw(g,k,x,y,sz,col){var I=SGI[k],s=sz/60;g.save();g.translate(x,y);g.scale(s,s);g.strokeStyle=col;g.fillStyle=col;g.lineWidth=2.4;g.lineCap='round';g.lineJoin='round';
+  I.s.forEach(function(d){g.stroke(new Path2D(d))});I.f.forEach(function(d){g.fill(new Path2D(d))});
+  (I.tx||[]).forEach(function(x){g.font='700 '+x[3]+'px '+FS;g.textAlign=k==='sorry'?'center':'left';g.fillText(k==='sorry'?t('sgSorry'):x[0],x[1],x[2])});g.restore()}
+function sgOpts(w){return t(w?'signOptW':'signOptL').split('|').map(function(x){var i=x.indexOf(':');return {k:x.slice(0,i),l:x.slice(i+1)}})}
+function sgRes(){var R=S.results.filter(function(r){return r})[0]||{w:false,p:0};return R}
+function showSign(){
+  var R=sgRes(),w=!!R.w,op=sgOpts(w);if(!SIGN.pick||SIGN.w!==w){SIGN.pick=[op[0].k,op[1].k];SIGN.w=w}
+  openOv('signv');
+  var h='<div class="bar"><span></span><b>'+t('signT')+'</b><button class="pill" id="bk">'+t('signRes')+' ›</button></div><div class="scroll">';
+  h+='<p class="body sgb">'+t(w?'signBW':'signBL')+'</p>';
+  h+='<label class="lb" for="sgn">'+t('signName')+'</label><input type="text" id="sgn" maxlength="10" placeholder="'+esc(t('signNameDef'))+'" value="'+esc(SIGN.name)+'">';
+  h+='<div class="sec">'+t(w?'signPickW':'signPickL')+' <small>'+t('signPick')+'</small></div><div class="sggrid">'+op.map(function(o){return '<button type="button" class="sgopt'+(SIGN.pick.indexOf(o.k)>=0?' sel':'')+'" data-k="'+o.k+'">'+sgSvg(o.k,64)+'<span>'+esc(o.l)+'</span></button>'}).join('')+'</div>';
+  h+='<img class="cardimg sgimg" id="sgim" alt="'+esc(t('signT'))+'"><button class="btn sgbtn" id="sgsh">'+t('signShare')+'</button><button class="btn soft" id="sgsv">'+t('signSave')+'</button><p class="fine">'+t('longPress')+'</p><button class="btn sgnext" id="sgnx">'+t('signNext')+' ›</button></div>';
+  C.innerHTML=h;
+  var cv=document.createElement('canvas'),tmr=null;
+  function draw(){drawSignCard(cv,{w:w,p:R.p,c:R.c,name:SIGN.name,pick:SIGN.pick}).then(function(){var im=cq('#sgim');if(im)im.src=cv.toDataURL('image/png')})}
+  cq('#bk').onclick=cq('#sgnx').onclick=function(){showHMEnd()};
+  cq('#sgn').oninput=function(){SIGN.name=this.value.trim();clearTimeout(tmr);tmr=setTimeout(draw,400)};
+  cqa('.sgopt').forEach(function(b){b.onclick=function(){var k=b.getAttribute('data-k'),i=SIGN.pick.indexOf(k);
+    if(i>=0){if(SIGN.pick.length>1)SIGN.pick.splice(i,1)}else{SIGN.pick.push(k);if(SIGN.pick.length>2)SIGN.pick.shift()}
+    cqa('.sgopt').forEach(function(x){x.classList.toggle('sel',SIGN.pick.indexOf(x.getAttribute('data-k'))>=0)});draw()}});
+  cq('#sgsv').onclick=function(){countHit('cards');saveImage(cv,'mamaslastbattery-hubby.png')};
+  cq('#sgsh').onclick=function(){countHit('hmsign');shareFile(cv,'mamaslastbattery-hubby.png',t(w?'signTxtW':'signTxtL')+' '+GAME_URL)};
+  draw();
+}
+function drawSignCard(cv,o){
+  cv.width=1080;cv.height=1920;var g=cv.getContext('2d'),RED='#A32D2D',DK='#791F1F',GD='#FAC775',CR='#FAEEDA',en=LANG==='en';
+  return fontsReady().then(function(){
+    g.fillStyle=RED;g.fillRect(0,0,1080,1920);
+    g.strokeStyle=GD;g.lineWidth=5;rrect(g,40,40,1000,1840,28);g.stroke();g.lineWidth=2;rrect(g,58,58,964,1804,20);g.stroke();
+    g.textAlign='center';g.fillStyle=GD;g.font='700 44px '+FS;g.fillText(t('brand')+' ・ '+t('signT'),540,150);
+    /* the stick */
+    var sx=104,sy=210,sw=210,sh=560;g.fillStyle=GD;rrect(g,sx,sy,sw,sh,22);g.fill();g.fillStyle=DK;
+    g.font='700 46px '+FH;g.fillText(t(o.w?'signNoW':'signNoL'),sx+sw/2,sy+80);
+    var lot=t(o.w?'signLotW':'signLotL');
+    if(/[A-Za-z]/.test(lot)){g.save();g.translate(sx+sw/2+26,sy+330);g.rotate(-Math.PI/2);g.font='700 74px '+FS;g.fillText(lot,0,0);g.restore()}
+    else{g.font='700 128px '+FH;Array.from(lot).forEach(function(ch,i){g.fillText(ch,sx+sw/2,sy+230+i*130)})}
+    /* certificate text */
+    var tx=360,tw=1080-tx-90;g.textAlign='left';
+    function fit(s,wt,px,fam,max){var z=px;g.font=wt+' '+z+'px '+fam;while(z>24&&g.measureText(s).width>(max||tw)){z--;g.font=wt+' '+z+'px '+fam}}
+    var ti=t(o.w?'signTitleW':'signTitleL');g.fillStyle=GD;g.font='700 '+(en?76:104)+'px '+FH;var tl=en?wrapLines(g,ti,tw).slice(0,2):[ti];
+    var y=en?300:330;tl.forEach(function(l,i){fit(l,'700',en?76:104,FH);g.fillText(l,tx,y+i*86)});y+=(tl.length-1)*86;
+    var nm=o.name||t('signNameDef');g.fillStyle=CR;fit(t('signCert',{n:nm}),'500',60,FS);g.fillText(t('signCert',{n:nm}),tx,y+110);
+    var cw=g.measureText(t('signCert',{n:''})).width,nw=g.measureText(nm).width;g.strokeStyle=GD;g.lineWidth=3;g.beginPath();g.moveTo(tx+cw-6,y+126);g.lineTo(tx+cw+nw+10,y+126);g.stroke();
+    var l1=t(o.w?'signW1':'signL1'),l2=o.w?t('signW2',{p:o.p}):((o.c&&o.c<21.9)?t('signL2',{tm:hm(o.c)}):t('signL2b',{p:o.p}));
+    fit(l1,'500',56,FS);g.fillText(l1,tx,y+210);fit(l2,'700',56,FS);g.fillStyle=GD;g.fillText(l2,tx,y+290);
+    /* stamp */
+    g.save();g.translate(860,y+430);g.rotate(-0.24);g.strokeStyle=GD;g.lineWidth=9;g.beginPath();g.arc(0,0,128,0,Math.PI*2);g.stroke();g.lineWidth=3;g.beginPath();g.arc(0,0,108,0,Math.PI*2);g.stroke();
+    g.fillStyle=GD;g.textAlign='center';var st=t(o.w?'signStampW':'signStampL').split('|');
+    if(st.length>1){g.font='700 70px '+FH;g.fillText(st[0],0,-8);g.fillText(st[1],0,70)}else{g.font='700 52px '+FS;g.fillText(st[0],0,18)}g.restore();
+    /* verse */
+    var vy=Math.max(y+620,sy+sh+120);g.textAlign='center';g.fillStyle=CR;
+    t(o.w?'signVerseW':'signVerseL').split('|').forEach(function(l,i){fit(l,'700',en?54:72,FH,900);g.fillText(l,540,vy+i*(en?76:100))});
+    /* picks */
+    var py=vy+(en?135:170),op=sgOpts(o.w),pk=op.filter(function(x){return o.pick.indexOf(x.k)>=0});
+    g.textAlign='left';g.fillStyle=GD;g.font='700 50px '+FS;g.fillText(t(o.w?'signPickW':'signPickL'),104,py);
+    var th=310,ty=py+30,n=pk.length,gap=36,tw2=n>1?(872-gap)/2:872;
+    pk.forEach(function(x,i){var bx=104+i*(tw2+gap);g.fillStyle=DK;rrect(g,bx,ty,tw2,th,30);g.fill();sgDraw(g,x.k,bx+tw2/2-100,ty+12,200,GD);
+      g.fillStyle=CR;g.textAlign='center';fit(x.l,'700',52,FS,tw2-40);g.fillText(x.l,bx+tw2/2,ty+th-30)});
+    /* foot: QR + call to action */
+    var qs=300,qx=104,qy=1920-104-qs;drawQR(g,qx,qy,qs);
+    var cx=qx+qs+40,cw2=1080-cx-100,ct=t(o.w?'signCtaW':'signCtaL').split('|');g.textAlign='left';
+    g.fillStyle=GD;fit(ct[0],'700',50,FS,cw2);g.fillText(ct[0],cx,qy+62);g.fillStyle=CR;fit(ct[1],'700',62,FS,cw2);g.fillText(ct[1],cx,qy+138);
+    g.fillStyle=GD;fit(ct[2],'700',48,FS,cw2);g.fillText(ct[2],cx,qy+206);
+    var u=GAME_URL.replace('https://','').replace(/\/$/,'');g.fillStyle=CR;fit(u,'500',30,FM,cw2);g.fillText(u,cx,qy+258);fit('@misskw3_3','700',30,FS,cw2);g.fillText('@misskw3_3',cx,qy+298);
+    g.textAlign='center';
+  });
+}
+/* --- v0.6 hot coffee, rebuilt: the screen is built once (taps are never swallowed by a redraw),
+   the next interruption waits until you have answered this one, and the cup empties as you drink --- */
+function cupSVG(t,lv){if(lv===undefined)lv=1;var steam=t>60?'<path d="M84 30c-6-8 6-12 0-20M104 30c-6-8 6-12 0-20M124 30c-6-8 6-12 0-20" stroke="#c9b8a6" stroke-width="4" fill="none" stroke-linecap="round"/>':'';
+  var y0=56+(1-lv)*84,k=10/90,xl=50+(y0-50)*k+3,xr=160-(y0-50)*k-3,fill=lv>0.02?'<path d="M'+xl+' '+y0+'H'+xr+'L'+(149)+' 139Q147 149 136 149H74Q63 149 61 139Z" fill="#8a5a44"/><ellipse cx="105" cy="'+y0+'" rx="'+((xr-xl)/2)+'" ry="6" fill="#9c6a52"/>':'';
+  return '<svg width="180" height="150" viewBox="0 0 200 170" aria-hidden="true">'+steam+'<path d="M50 50h110l-10 90a14 14 0 0 1-14 12H74a14 14 0 0 1-14-12z" fill="#fff" stroke="none"/>'+fill+'<path d="M50 50h110l-10 90a14 14 0 0 1-14 12H74a14 14 0 0 1-14-12z" fill="none" stroke="#3d332b" stroke-width="4"/><path d="M158 70h10a16 16 0 0 1 0 32h-13" stroke="#3d332b" stroke-width="4" fill="none"/></svg>'}
+function gCoffee(mode){
+  C.innerHTML=chillHead('coffee',mode)+'<div class="scroll"><p class="body">'+X.chill.coffeeIntro+'</p><div style="display:flex;justify-content:center">'+cupSVG(90)+'</div><button class="btn warm" id="cstart">'+t('start')+'</button></div>';
+  chillBind('coffee',mode);
+  cq('#cstart').onclick=run;
+  var timer=null;
+  function run(){
+    var temp=90,sips=0,cur=null,list=shuffle(ndArr(X.chill.intr).map(function(x){return {q:x[0],u:x[1]}})).slice(0,5),idx=0,nextAt=1.4,tt=0,lock=0,over=false;
+    C.innerHTML=chillHead('coffee',mode)+'<div class="scroll"><div class="bar" style="min-height:0"><span class="body">'+X.chill.temp+'</span><span class="mono" id="ct">90°C</span></div><div class="thermo"><i id="th" style="width:100%"></i></div>'+
+      '<div class="sips" id="sd">'+[0,1,2,3,4,5].map(function(){return '<i></i>'}).join('')+'</div><div style="display:flex;justify-content:center" id="cup">'+cupSVG(90,1)+'</div>'+
+      '<button class="sipbig" id="sip" type="button"></button><div class="flash" id="fl" aria-live="polite"></div><div id="ib"></div></div>';
+    chillBind('coffee',mode);
+    var sip=cq('#sip'),ib=cq('#ib'),fl=cq('#fl');
+    function btn(){sip.disabled=!!cur||lock>0;sip.textContent=fmt(X.chill.sip,{n:6-sips})}
+    function box(){
+      if(cur){ib.innerHTML='<div class="intr" role="alert"><div class="time">'+X.chill.someone+'</div><div class="q">'+cur.q+'</div><div class="two"><button id="iw" type="button" style="background:var(--c-let)">'+X.chill.wait+'</button><button id="ig" type="button" style="background:var(--c-do)">'+X.chill.goNow+'</button></div></div>';
+        cq('#iw').onclick=function(){ans(false)};cq('#ig').onclick=function(){ans(true)}}
+      else ib.innerHTML='<div class="intr" style="opacity:.55"><div class="q">'+X.chill.quiet+'</div></div>';btn()}
+    function ans(go){if(!cur)return;if(cur.u){temp-=go?4:10;fl.innerHTML=go?X.chill.urgOk:X.chill.urgBad}else{temp-=go?8:0;fl.innerHTML=go?X.chill.nonGo:X.chill.nonWait}
+      cur=null;nextAt=tt+1.6+Math.random()*0.8;box()}
+    sip.onclick=function(){if(over||cur||lock>0)return;sips++;lock=0.35;fl.innerHTML='';tone(300,0.12,0.08,'sine');
+      cqa('#sd i').forEach(function(d,i){d.className=i<sips?'on':''});cq('#cup').innerHTML=cupSVG(temp,1-sips/6);
+      if(sips>=6){finish(true);return}btn()};
+    function finish(hot){if(over)return;over=true;clearInterval(timer);timer=null;if(!C)return;
+      if(hot){sSparkle();if(window.onBadge)window.onBadge('coffee')}
+      var amt=mode?(hot?mode.reward:Math.round(mode.reward/2)):0;if(mode)mode.n=mode.goal;
+      C.innerHTML=chillHead('coffee',null)+'<div class="scroll" style="text-align:center"><div style="display:flex;justify-content:center;margin-top:16px">'+cupSVG(hot?80:40,hot?0:0.5)+'</div><h2>'+(hot?X.chill.hot:X.chill.cold)+'</h2><p class="body">'+(hot?X.chill.hotB:X.chill.coldB)+'</p>'+(mode?'<button class="btn warm" id="cd">+'+amt+'% '+t('back2')+'</button>':'<button class="btn soft" id="cd">'+X.chill.another+'</button>')+'</div>';
+      bindMute();cq('#bk').onclick=function(){if(mode){var m=mode;closeOv();m.done(true,amt)}else chillHome()};
+      cq('#cd').onclick=function(){if(mode){var m=mode;closeOv();m.done(true,amt)}else gCoffee(null)};
+    }
+    box();
+    timer=setInterval(function(){
+      tt+=0.1;temp-=0.24;if(lock>0){lock-=0.1;if(lock<=0)btn()}
+      if(!cur&&idx<list.length&&tt>=nextAt){cur=list[idx++];box()}
+      if(temp<=45){finish(false);return}
+      var th=cq('#th');if(th)th.style.width=Math.max(0,(temp-45)/45*100)+'%';var ct=cq('#ct');if(ct)ct.textContent=Math.round(temp)+'°C';
+    },100);
+    ovStop=function(){clearInterval(timer);over=true};
+  }
+}
+
+/* --- v0.6 Hubby mode: what happens at home after Mum's battery runs out --- */
+function showFallout(){
+  var N=S.night,F=t('hmFall');openOv('blackov');
+  var ic={kid:bbFace(0,58),dad:dadFace('sofa',58),mess:'<span class="fic">'+sgSvg('dish',52)+'</span>',night:momFace(0,58)};
+  C.innerHTML='<div class="blackout fall"><div class="bigtitle off" style="font-size:30px">'+t('hmFallT')+'</div>'+
+    F.map(function(x){return '<div class="fallrow"><div class="fface">'+ic[x[0]]+'</div><div><div class="time">'+x[1]+'</div><p class="fwhat">'+x[2]+'</p><p class="finner">'+x[3]+'</p></div></div>'}).join('')+
+    '<div class="fallend"><p>'+t('hmFallEnd')+'</p><p class="fask">'+t('hmFallAsk')+'</p></div><button class="btn warm" id="nx">'+t('hmFallGo')+'</button></div>';
+  cqa('.fallrow,.fallend,#nx').forEach(function(p,i){p.style.animationDelay=(RM?0:0.4+i*1.6)+'s'});
+  tone(196,0.6,0.08,'triangle');
+  cq('#nx').onclick=function(){N.stage='talk';save();showLose()};
+}
 
 /* ================= BOOT ================= */
 LANGS=LANGS.filter(function(l){return !!L[l]});
 setLang(detectLang());
-if(/[?&]debug\b/.test(location.search))window.__slb={get S(){return S},set S(v){S=v},show:show,startDay:startDay,endOfDay:endOfDay,frame:frame,hero:hero,resume:resume,openChild:openChild,openChill:openChill,openShare:openShare,showEnding:showEnding,save:save,fresh:fresh,setLang:setLang,lose:lose,win:win,TUNE:TUNE,EVDEF:EVDEF,L:L,closeOv:closeOv,openSOS:openSOS,dadRate:dadRate};if(/[?&]debug\b/.test(location.search))window.__draw={text:drawTextCard,star:drawStarCard,result:drawResultCard,week:drawWeekCard};
+if(/[?&]debug\b/.test(location.search))window.__slb={get S(){return S},set S(v){S=v},show:show,startDay:startDay,endOfDay:endOfDay,frame:frame,hero:hero,resume:resume,openChild:openChild,openChill:openChill,openShare:openShare,showEnding:showEnding,save:save,fresh:fresh,setLang:setLang,lose:lose,win:win,TUNE:TUNE,EVDEF:EVDEF,L:L,closeOv:closeOv,openSOS:openSOS,dadRate:dadRate,showHMEnd:showHMEnd,showSign:showSign,drawSignCard:drawSignCard};if(/[?&]debug\b/.test(location.search))window.__draw={text:drawTextCard,star:drawStarCard,result:drawResultCard,week:drawWeekCard};
 try{countPeople();showTitle()}catch(e){document.getElementById('app').textContent='Error. Please reload.';throw e}
 
 })();
